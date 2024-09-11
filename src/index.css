@@ -4,29 +4,172 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-  
-  h1, h2, h3 {
-    color: #333;
-  }
-  
-  nav a {
+    background-color: #bfd4db; /* Light blue */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header and Footer Styles */
+header, footer {
+    background-color: #030333; /* Navy blue */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    left: 0;
+}
+
+header {
+    top: 0;
+}
+
+footer {
+    bottom: 0;
+}
+
+main {
+    flex: 1;
+    padding-top: 100px; /* Adjust to prevent content from being hidden by the header */
+    padding-bottom: 100px; /* Adjust to prevent content from being hidden by the footer */
+    margin: 0 auto;
+}
+
+h1, h2, h3 {
+    color: #fff; /* White text for headings in header */
+}
+
+nav a {
     margin-right: 10px;
     text-decoration: none;
-    color: #007BFF;
-  }
-  
-  nav a.active {
+    color: white; /* White text for navigation links */
+}
+
+nav a.active {
     font-weight: bold;
-    color: #0056b3;
-  }
-  
-  footer {
+    color: #ADD8E6; /* Light blue for active links */
+}
+
+/* Section padding */
+section {
     padding: 20px;
+}
+
+footer a {
+    color: white; /* White text for footer links */
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.black {
+    color: black;
+}
+
+.pageh2 {
+    color: black;
     text-align: center;
-    background-color: #f1f1f1;
-  }
-  
-  section {
+}
+
+/* Styles for About Me section */
+.about-me-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+    text-align: center; /* Center text */
+}
+
+.about-me-section img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px; /* Space between image and text */
+    border: 1px solid black; /* Black border for the image */
+    padding: 10px; /* Padding inside the border */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Small box shadow for the image */
+}
+
+.about-me-section p {
+    background-color: white; /* White background for the text box */
+    border: 1px solid black; /* Black border for the text box */
+    padding: 20px; /* Increased padding inside the text box */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Small box shadow */
+    max-width: 600px; /* Limit the width of the text box */
+    margin: 0 auto; /* Center the text box horizontally */
+}
+
+/* Styles for Portfolio page */
+.portfolio-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 20px; /* Space between grid items */
     padding: 20px;
-  }
+}
+
+/* Styles for Project boxes */
+.project-box {
+    background-color: black; /* Black background for the boxes */
+    color: white; /* White text for the boxes */
+    border: 1px solid black; /* Border for the boxes */
+    padding: 0; /* Remove padding to make title section flush with top */
+    margin: 10px; /* Margin around each box */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 400px; /* Set a fixed height for the boxes */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+/* Title section of the project box */
+.project-title {
+    background-color: #f5a623; /* Muted pastel-like color for title background */
+    color: black; /* Black text for title */
+    margin: 0; /* Remove margin */
+    padding: 10px; /* Padding around the title */
+    width: 100%; /* Full width of the box */
+    text-align: center; /* Center the title text */
+    box-sizing: border-box; /* Include padding in the element's total width and height */
+}
+
+/* Image within the project box */
+.project-image {
+    width: 100%; /* Full width of the box */
+    height: 77%; /* Fixed height for the image */
+    object-fit: cover; /* Cover the image without distortion */
+    border-top: 1px solid black; /* Border at the top of the image */
+}
+
+/* Links within the project box */
+.project-links {
+    margin-top: auto; /* Push links to the bottom of the box */
+    padding: 5px; /* Reduced padding inside the box */
+    text-align: center; /* Center the links */
+    width: 100%; /* Full width of the box */
+    height: 10%; /* Set a fixed height for the links section (approximately 1/8 of 400px) */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.project-links p {
+    margin: 0; /* Remove margin from the paragraph to reduce space */
+}
+
+.project-links a {
+    color: white; /* White text for links */
+    text-decoration: none;
+    margin: 0 5px; /* Margin between links */
+    font-size: 0.8em; /* Slightly smaller font size for links */
+}
+
+.project-links a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Specific colors for project titles */
+.title-weather-dashboard { background-color: #a0d6f2; } /* Light blue */
+.title-note-taker { background-color: #f4c6c6; } /* Light pink */
+.title-pwa-text-editor { background-color: #d6e5d6; } /* Light green */
+.title-personal-blog { background-color: #f5e4a2; } /* Light yellow */
+.title-melodybase { background-color: #d0b5f0; } /* Light purple */
+.title-task-board { background-color: #f9b1b1; } /* Light coral */
