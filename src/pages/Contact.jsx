@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import '../index.css'; // Import the updated CSS file
 
 function Contact() {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
@@ -13,9 +14,9 @@ function Contact() {
   };
 
   return (
-    <section>
-      <h2 class="pageh2">Contact Me</h2>
-      <form onSubmit={handleSubmit}>
+    <section className="contact-section">
+      <h2 className="pageh2">Contact Me</h2>
+      <form onSubmit={handleSubmit} className="contact-form">
         <label>
           Name:
           <input type="text" name="name" value={formData.name} onChange={handleChange} required />

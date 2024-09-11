@@ -173,3 +173,97 @@ footer a:hover {
 .title-personal-blog { background-color: #f5e4a2; } /* Light yellow */
 .title-melodybase { background-color: #d0b5f0; } /* Light purple */
 .title-task-board { background-color: #f9b1b1; } /* Light coral */
+
+/* Styles for Contact page */
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+    margin: 20px auto; /* Center the section horizontally and add margin */
+}
+
+.contact-section h2 {
+    margin-bottom: 20px; /* Space between heading and form box */
+}
+
+.contact-form {
+    background-color: white; /* White background for the form box */
+    border: 1px solid black; /* Black border for the form box */
+    padding: 20px; /* Padding inside the form box */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Small box shadow */
+    max-width: 600px; /* Limit the width of the form box */
+    width: 100%; /* Full width within the max-width */
+}
+
+/* Styles for form elements */
+.contact-form label {
+    display: block;
+    margin-bottom: 10px; /* Space between labels */
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%; /* Full width of the form box */
+    padding: 8px; /* Padding inside input and textarea */
+    margin-bottom: 10px; /* Space between fields */
+    border: 1px solid black; /* Black border for fields */
+    box-sizing: border-box; /* Include padding and border in the element's total width */
+}
+
+.contact-form button {
+    padding: 10px 20px; /* Padding inside the button */
+    background-color: #030333; /* Navy blue background */
+    color: white; /* White text for the button */
+    border: none; /* Remove default border */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.contact-form button:hover {
+    background-color: #030333; /* Darker navy blue on hover */
+}
+
+/* Resume page styles */
+.resume-container {
+    text-align: center; /* Center all text and elements except list */
+    padding: 20px;
+}
+
+.resume-container a {
+    color: white; /* White text for the download button */
+    background-color: #030333; /* Navy blue background for the button */
+    padding: 10px 20px; /* Padding inside the button */
+    text-decoration: none; /* Remove underline from the link */
+    border: 2px solid #030333; /* Border to match the button color */
+    border-radius: 5px; /* Rounded corners for the button */
+}
+
+.resume-container a:hover {
+    background-color: #000; /* Darker background on hover */
+    border-color: #000; /* Darker border color on hover */
+}
+
+.resume-container h2 {
+    margin-bottom: 20px; /* Space below the Resume header */
+}
+
+.resume-container p {
+    margin-bottom: 30px; /* Space below the download link */
+}
+
+/* Style the list container to center it while keeping the list items left-aligned */
+.resume-container ul {
+    text-align: left; /* Align the list items to the left */
+    display: inline-block; /* Prevent the list from expanding to full width */
+    margin: 0 auto; /* Center the list horizontally */
+    padding-left: 0; /* Remove default padding */
+}
+
+.resume-container li {
+    margin-bottom: 10px; /* Space between list items */
+    font-size: 1.4em; /* Larger font size for list items */
+}
+
+.resume-container h3 {
+    margin-top: 40px; /* Space above the Proficiencies header */
+    font-size: 1.5em; /* Larger font size for the proficiencies header */
+}
