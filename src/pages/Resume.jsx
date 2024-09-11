@@ -6,7 +6,7 @@ function Resume() {
     <section className="resume-container">
       <h2 className="pageh2">Resume</h2>
       <p>
-        <a href="./src/assets/resume/Bo_Amarant_Resume.pdf" download>Download My Resume</a>
+        <a href="./assets/resume/Bo_Amarant_Resume.pdf" download>Download My Resume</a>
       </p>
       <h3 className="black">Proficiencies</h3>
       <ul>
