@@ -1,12 +1,26 @@
 {
   "name": "react-portfolio",
   "version": "1.0.0",
-  "description": "",
+  "description": "A portfolio website built with React and Vite",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vite",
+    "start": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "author": "[Your Name]",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.11.2"
+  },
+  "devDependencies": {
+    "vite": "^4.4.1",
+    "@vitejs/plugin-react": "^4.0.4",
+    "eslint": "^8.40.0",
+    "eslint-plugin-react": "^7.32.2"
+  }
 }
