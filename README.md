@@ -10,7 +10,7 @@ N/A
 
 ## Usage
 
-This project can be accessed on Netlify at the following URL: [https://boamarant.github.io/Portfolio-Webpage-Project/](https://boamarant.github.io/Portfolio-Webpage-Project/).
+This project can be accessed on Netlify at the following URL: [https://remarkable-chebakia-ba68d9.netlify.app/](https://remarkable-chebakia-ba68d9.netlify.app/).
 
 ## Credits
 
